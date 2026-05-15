@@ -1,17 +1,6 @@
-Task 2: Data Preprocessing
-)PythonX = df.drop(columns=['churn'])
-y = df['churn'].values.reshape(-1, 1)
-
-# One-hot encoding
-X = pd.get_dummies(X, columns=['region', 'plan_type', 'contract_type', 'payment_method'], drop_first=True)
-
-# Scale numerical features
-scaler = StandardScaler()
-num_cols = X.select_dtypes(include=['int64','float64']).columns
-X[num_cols] = scaler.fit_transform(X[num_cols])
-
-X_train, X_test, y_train, y_test = train_test_split(X.values, y, test_size=0.2, random_state=42, stratify=y)
-
-print(f"Training samples: {X_train.shape[0]}")
-print(f"Testing samples: {X_test.shape[0]}")
-print(" Data ready for training!")
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+tensorflow
