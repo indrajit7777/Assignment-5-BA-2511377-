@@ -59,7 +59,7 @@ print("This is an **Image Classification** problem.")
 # data_dir = 'dataset'   # ←←← CHANGED TO MATCH YOUR ZIP - This is now set above
 # classes = ['normal', 'scratch', 'dent', 'stain'] # This is now defined above
 
-print("📊 Number of images per class:")
+print("Number of images per class:")
 for cls in classes:
     path = os.path.join(data_dir, cls)
     num = len(os.listdir(path)) if os.path.exists(path) else 0
